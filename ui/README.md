@@ -1,38 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Setting up the project.
 
-## Getting Started
+### Step 1
 
-First, run the development server:
+- Clone the repository by typing `git clone https://github.com/br0wnD3v/zkApp_Base.git` in your terminal.
+- `cd zkApp_Base`
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### Step 2 (contracts/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- `cd contracts/`
+- `npm install` to install all the packages.
+- `npm run build` to build the contracts since the they are to be referenced in the frontend.
+- `cd ..` To get back to the root folder.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Step 3 (ui/)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- `cd ui/`
+- `npm install` to install all the packages.
+- `npm run dev` to start the web application.
+- Follow the step unfolding by opening on the browser's console and don't forget to connect the webapp with Auro Wallet.
+- Finally you will be able to see the current state and a method to update the state.
